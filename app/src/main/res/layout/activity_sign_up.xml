@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#071917"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <!--  Logo  -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="Logo Mugnificent"
+            android:src="@drawable/logo_mugnificent" />
+        <!--  App Name  -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="MUGNIFICENT"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <!--  Tagline  -->
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Make Up Your Mood"
+            android:textColor="#F4A200"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="450dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_su"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <!--  Greeting  -->
+            <TextView
+                android:id="@+id/greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Hai, Mugnions"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <!--  Log In Button  -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_button_white"
+                android:backgroundTint="#D9D9D9"
+                android:text="LOG IN"
+                android:textAllCaps="true"
+                android:textColor="#071917"
+                android:textStyle="bold" />
+            <!--  Sign Up Button  -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_signup"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_button_transperent"
+                android:text="SIGN UP"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <!--  Separator Text  -->
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/separator_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="12dp"
+                android:text="atau Log In dengan"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+            <!--  Google Login  -->
+            <LinearLayout
+                android:id="@+id/google_login"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/rounded_button_transperent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Google icon"
+                    android:src="@drawable/icon_google" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Log In dengan Google"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--  Apple Login  -->
+            <LinearLayout
+                android:id="@+id/apple_login"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/rounded_button_transperent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Apple icon"
+                    android:src="@drawable/icon_apple" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Log In dengan Apple"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--  Instagram Login  -->
+            <LinearLayout
+                android:id="@+id/instagram_login"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rounded_button_transperent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Instagram icon"
+                    android:src="@drawable/icon_instagram" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Log in dengan Instagram"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

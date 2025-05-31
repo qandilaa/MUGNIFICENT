@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#071917">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#12352C"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY Booking"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!-- Tabs Container -->
+    <RelativeLayout
+        android:id="@+id/tabsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Tab Pemesanan -->
+        <TextView
+            android:id="@+id/tabPemesanan"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Pemesanan"
+            android:textAlignment="center"
+            android:textColor="#955F31"
+            android:padding="12dp"
+            android:textStyle="bold" />
+
+        <!-- Tab Riwayat -->
+        <TextView
+            android:id="@+id/tabRiwayat"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tabPemesanan"
+            android:text="Riwayat Pesanan"
+            android:background="@drawable/tab_select_bg"
+            android:textColor="#955F31"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Garis Bawah Tab -->
+    <View
+        android:id="@+id/tabUnderline"
+        android:layout_width="360dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/tabsContainer"
+        android:background="#FFFFFF"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="18dp"/>
+
+    <LinearLayout
+        android:id="@+id/bookingList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabUnderline"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp"> <!-- agar tidak tertutup bottom nav -->
+
+        <include layout="@layout/booking_card" />
+        <include layout="@layout/booking_card" />
+        <include layout="@layout/booking_card" />
+
+    </LinearLayout>
+
+
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#102821"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/icon_home" />
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/icons_favorite"
+            android:layout_margin="16dp" />
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/icon_menu"
+            android:layout_margin="16dp" />
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/icon_bookingc"
+            android:layout_margin="16dp" />
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/icon_user"
+            android:layout_margin="16dp" />
+    </LinearLayout>
+</RelativeLayout>

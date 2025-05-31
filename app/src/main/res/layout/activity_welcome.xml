@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashscreen1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome_bg"
+        android:contentDescription="Background Image" />
+
+    <!-- Logo dan teks di tengah -->
+    <LinearLayout
+        android:id="@+id/centerLogoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/circle_background"
+        android:padding="36dp">
+
+        <!-- Logo kursi dan meja -->
+
+        <!-- Text MUGNIFICENT -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo_mugnificent" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MUGNIFICENT"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+
+        <!-- Text Make Up Your Mood -->
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make Up Your Mood"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</RelativeLayout>

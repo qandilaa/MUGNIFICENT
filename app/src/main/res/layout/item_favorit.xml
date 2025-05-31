@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:clipToOutline="true">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/image_rounded"
+        android:clipToOutline="true">
+
+        <ImageView
+            android:id="@+id/imgMenu"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/makanan1" />
+
+        <ImageView
+            android:id="@+id/iconFavorite"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|start"
+            android:layout_margin="8dp"
+            android:src="@drawable/icons_favorite" />
+
+        <TextView
+            android:id="@+id/txtHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_price_label"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="Rp 50.000"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/image_rounded"
+        android:clipToOutline="true">
+
+        <ImageView
+            android:id="@+id/imgMenu2"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/makanan1" />
+
+        <ImageView
+            android:id="@+id/iconFavorite2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|start"
+            android:layout_margin="8dp"
+            android:src="@drawable/icons_favorite" />
+
+        <TextView
+            android:id="@+id/txtHarga2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_price_label"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="Rp 50.000"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</LinearLayout>

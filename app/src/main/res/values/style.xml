@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Style umum untuk semua meja -->
+    <style name="TableButton">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/rounded_button_transperent1</item> <!-- Border -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Warna teks -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Style khusus untuk kasir -->
+    <style name="TableButtonKasir" parent="TableButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

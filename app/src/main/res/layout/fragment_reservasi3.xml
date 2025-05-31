@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#071917">
+
+    <!-- Pertanyaan -->
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Apakah anda ingin memilih hidangan?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- Judul "Menu" -->
+
+    <!-- Garis bawah judul -->
+    <TextView
+        android:id="@+id/text_menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="183dp"
+        android:text="Menu"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/menu_underline"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_menu_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:background="#B47632" />
+
+    <LinearLayout
+        android:id="@+id/categoryFilter"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/menu_underline"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="-5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMakanan"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button_transperent"
+            android:text="Makanan"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMinuman"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_button_transperent"
+            android:text="Minuman"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCemilan"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_button_transperent"
+            android:text="Cemilan"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/categoryFilter"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/item_menu"
+        android:layout_marginEnd="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00100C">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#12352C"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!-- Search + Profile -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/ivProfile"
+        android:hint="Pencarian"
+        android:inputType="text"
+        android:drawableStart="@drawable/icon_pencarian"
+        android:padding="10dp"
+        android:textColorHint="#AAAAAA"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_transperent" />
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icon_user"
+        android:scaleType="centerCrop" />
+
+    <!-- Greeting -->
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearch"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        android:text="Hai, Mugnions"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGreeting"
+        android:layout_marginStart="30dp"
+        android:text="Make Up Your Mood"
+        android:textColor="#FFA15E"
+        android:textSize="14sp" />
+
+    <!-- Category Filter -->
+    <LinearLayout
+        android:id="@+id/categoryFilter"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/tvTagline"
+        android:layout_marginTop="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            style= "@android:style/Widget.Button"
+            android:id="@+id/btnMakanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makanan"
+            android:textSize="14sp"
+            android:background="@drawable/rounded_button_transperent"
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style= "@android:style/Widget.Button"
+            android:id="@+id/btnMinuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minuman"
+            android:textSize="14dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_button_transperent"
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style= "@android:style/Widget.Button"
+            android:id="@+id/btnCemilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cemilan"
+            android:textSize="14dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_button_transperent"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Best Seller -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/categoryFilter"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvBestSeller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best Seller"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerBestSeller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvBestSeller"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" />
+
+            <!-- Promo Banner -->
+            <ImageView
+                android:id="@+id/imgPromo"
+                android:layout_width="340dp"
+                android:layout_height="110dp"
+                android:layout_below="@id/recyclerBestSeller"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop" />
+
+            <!-- Recommend -->
+            <TextView
+                android:id="@+id/tvRecommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgPromo"
+                android:layout_marginTop="20dp"
+                android:text="Recommend"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerRecommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvRecommend"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="true"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

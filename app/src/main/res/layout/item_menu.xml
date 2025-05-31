@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/bg_menu_border"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <!-- Gambar Menu -->
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/makanan1"
+        android:background="@drawable/image_rounded"
+        android:clipToOutline="true" />
+
+    <!-- Kontainer Teks -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <!-- Nama Menu -->
+        <TextView
+            android:id="@+id/txtNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crispy Honey"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#B47632" />
+
+        <!-- Deskripsi -->
+        <TextView
+            android:id="@+id/txtDeskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chilli Beef"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp" />
+
+        <!-- Harga dan Tombol dalam satu baris -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rp 35.000"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnTambah"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="#955F31"
+                android:padding="4dp"
+                android:text="Tambahkan"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#071917">
+
+    <TextView
+        android:id="@+id/labelTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="96dp"
+        android:text="Tanggal"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputTanggal"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@id/labelTanggal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_button_transperent"
+        android:gravity="center"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:textColorHint="#AAAAAA" />
+
+    <!-- Label & Input: Jam -->
+
+    <TextView
+        android:id="@+id/labelJam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTanggal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="83dp"
+        android:text="Jam"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputJam"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@id/labelJam"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_button_transperent"
+        android:gravity="center"
+        android:hint="HH:MM"
+        android:inputType="time"
+        android:textColor="@color/white"
+        android:textColorHint="#AAAAAA" />
+
+    <!-- Label & Input: Jumlah Tamu -->
+    <TextView
+        android:id="@+id/labelTamu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelJam"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="83dp"
+        android:text="Jumlah Tamu"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputTamu"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@id/labelTamu"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_button_transperent"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#AAAAAA" />
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#071917">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#12352C"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!-- Judul Notifikasi -->
+    <TextView
+        android:id="@+id/txtStatusPesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBar"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Pemesanan Kamu Sudah Kami\nProses, Mugnions!"
+        android:textAlignment="center"
+        android:textColor="#955F31"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <!-- Tanggal & Waktu -->
+    <TextView
+        android:id="@+id/txtTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStatusPesanan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="10 April 2025 - 17:16"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <!-- Card Detail -->
+    <RelativeLayout
+        android:id="@+id/cardDetail"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTanggal"
+        android:layout_marginTop="16dp"
+        android:background="#173834"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#173834"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/labelNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/valueNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelNama"
+            android:layout_alignParentEnd="true"
+            android:text="Thealyss"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelMeja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelNama"
+            android:layout_marginTop="8dp"
+            android:text="Pemesanan Meja"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/valueMeja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelMeja"
+            android:layout_alignParentEnd="true"
+            android:text="No. 7"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelNominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelMeja"
+            android:layout_marginTop="8dp"
+            android:text="Nominal Pesanan"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/valueNominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelNominal"
+            android:layout_alignParentEnd="true"
+            android:text="Rp 175.000"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/labelTransaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelNominal"
+            android:layout_marginTop="8dp"
+            android:text="ID Transaksi"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/valueTransaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelTransaksi"
+            android:layout_alignParentEnd="true"
+            android:text="MA2308243025APR"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <!-- Detail Pesanan -->
+        <TextView
+            android:id="@+id/labelDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelTransaksi"
+            android:layout_marginTop="16dp"
+            android:text="Detail Pesanan"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/valueDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelDetail"
+            android:layout_marginTop="4dp"
+            android:text="Kopi Caramel Butterscotch Whisper\n2 x Rp 25.000\n\nFride Steak Special beef mode by\nspecial frying with potato\n2 x Rp 50.000\n\nLemon Pepper Sauce Wings Chirpy\nChicken Wings\n1 x 25.000"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <!-- Biaya Pajak -->
+        <TextView
+            android:id="@+id/labelPajak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valueDetail"
+            android:layout_marginTop="16dp"
+            android:text="Biaya Pajak"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/valuePajak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelPajak"
+            android:layout_alignParentEnd="true"
+            android:text="Rp 5.000"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <!-- Total -->
+        <TextView
+            android:id="@+id/labelTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelPajak"
+            android:layout_marginTop="8dp"
+            android:text="Total"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/valueTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelTotal"
+            android:layout_alignParentEnd="true"
+            android:text="Rp 180.000"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!-- Garis Bawah Tab -->
+    <View
+        android:id="@+id/tabUnderline"
+        android:layout_width="360dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/cardDetail"
+        android:background="#FFFFFF"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="25dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442356357768",
+    "project_id": "mugnificent-53262",
+    "storage_bucket": "mugnificent-53262.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442356357768:android:2526abc57579f38ee59d3d",
+        "android_client_info": {
+          "package_name": "com.kelas.mugnificent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAocH5uUyog50RnVV16o4nSAju-YJ-PddI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

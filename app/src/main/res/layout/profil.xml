@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#071917">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#12352C"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+    <!-- Foto Profil -->
+    <RelativeLayout
+        android:id="@+id/profileContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:clipToOutline="true" />
+    </RelativeLayout>
+
+    <!-- Nama -->
+    <TextView
+        android:id="@+id/txtNamaDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Thealyss"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Informasi Nama Lengkap -->
+    <TextView
+        android:id="@+id/labelNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNamaDisplay"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:text="Nama"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtNamaLengkap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelNama"
+        android:layout_marginStart="40dp"
+        android:text="Arthea Lysandra"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="4dp" />
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="35dp"
+        android:layout_below="@id/txtNamaLengkap"
+        android:background="#FFFFFF" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/labelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNamaLengkap"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:text="Email"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelEmail"
+        android:layout_marginStart="40dp"
+        android:text="arthea.lysandra@gmail.com"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="4dp" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="35dp"
+        android:layout_below="@id/txtEmail"
+        android:background="#FFFFFF" />
+
+    <!-- No. HP -->
+    <TextView
+        android:id="@+id/labelHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmail"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:text="No. HP / WA"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelHP"
+        android:layout_marginStart="40dp"
+        android:text="0812 2322 0408"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="4dp" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="35dp"
+        android:layout_below="@id/txtHP"
+        android:background="#FFFFFF" />
+</RelativeLayout>

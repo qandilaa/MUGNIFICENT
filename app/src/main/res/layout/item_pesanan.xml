@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tabUnderline"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_margin="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="25dp"
+    android:background="@drawable/card_bg"
+    android:padding="12dp">
+
+    <!-- Tanggal -->
+    <TextView
+        android:id="@+id/bookingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 April 2025"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <!-- Jam -->
+    <TextView
+        android:id="@+id/bookingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="17:16"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/bookingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookingDate"
+        android:layout_marginTop="8dp"
+        android:text="Pemesanan Meja"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Deskripsi -->
+    <TextView
+        android:id="@+id/bookingDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookingTitle"
+        android:layout_marginTop="4dp"
+        android:text="Pemesanan meja no. 7 beserta menu makanan atas nama Thealyss berhasil."
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+</RelativeLayout>

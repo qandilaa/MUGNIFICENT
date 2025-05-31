@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#071917">
+
+    <!-- Pertanyaan -->
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apakah anda ingin memilih meja pada denah?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Denah (meja dan kasir) -->
+
+    <RelativeLayout
+        android:id="@+id/layoutDenah"
+        android:layout_width="325dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/txtQuestion"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="141dp"
+        android:background="@drawable/rounded_button_transperent">
+
+        <!-- Meja (pakai Button, bisa diganti ToggleButton jika perlu) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/meja1"
+            style="@style/TableButton"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/meja2"
+            style="@style/TableButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="39dp"
+            android:layout_toEndOf="@id/meja1"
+            android:text="2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kasir"
+            style="@style/TableButtonKasir"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="31dp"
+            android:layout_toEndOf="@id/meja2"
+            android:text="Kasir" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/meja3"
+            style="@style/TableButton"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/meja1"
+            android:layout_alignStart="@id/meja1"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="29dp"
+            android:text="3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/meja4"
+            style="@style/TableButton"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/meja3"
+            android:layout_alignStart="@id/meja3"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="29dp"
+            android:text="4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/meja5"
+            style="@style/TableButton"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/meja4"
+            android:layout_alignStart="@id/meja4"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="29dp"
+            android:text="5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/meja6"
+            style="@style/TableButton"
+            android:layout_width="30dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="99dp"
+            android:text="6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/meja7"
+            style="@style/TableButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/meja6"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="39dp"
+            android:layout_toEndOf="@+id/meja5"
+            android:text="4" />
+    </RelativeLayout>
+
+</RelativeLayout>
